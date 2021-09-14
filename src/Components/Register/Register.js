@@ -46,7 +46,7 @@ class Register extends Component {
             body: JSON.stringify(data)
         }
 
-        fetch(`${process.env.HOSTING}/register`, config)
+        fetch('https://smart-face-app-api.herokuapp.com/register', config)
             .then(response => response.json())
             .then(user => {
                 if(user.id){

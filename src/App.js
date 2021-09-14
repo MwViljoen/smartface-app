@@ -72,7 +72,7 @@ class App extends Component{
     onDetect = () => {
         const {input, user} = this.state;
         this.setState({imgUrl: input});
-        fetch(`${process.env.HOSTING}/imageurl`, {
+        fetch('https://smart-face-app-api.herokuapp.com/imageurl', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
@@ -82,7 +82,7 @@ class App extends Component{
             .then((response) => response.json())
             .then((response) => {
                 if (response) {
-                    fetch(`${process.env.HOSTING}/image`, {
+                    fetch('https://smart-face-app-api.herokuapp.com/image', {
                         method: 'put',
                         headers: {
                             'Content-Type': 'application/json'

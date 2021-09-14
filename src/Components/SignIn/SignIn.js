@@ -34,7 +34,7 @@ class SignIn extends Component {
             body: JSON.stringify(data)
         }
 
-        fetch(`${process.env.HOSTING}/signin`, config)
+        fetch('https://smart-face-app-api.herokuapp.com/signin', config)
             .then(response => response.json())
             .then(user => {
                 if(user.id){
