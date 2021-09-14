@@ -46,7 +46,7 @@ class Register extends Component {
             body: JSON.stringify(data)
         }
 
-        fetch('/register', config)
+        fetch(`${process.env.HOSTING}/register`, config)
             .then(response => response.json())
             .then(user => {
                 if(user.id){

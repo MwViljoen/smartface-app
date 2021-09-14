@@ -34,7 +34,7 @@ class SignIn extends Component {
             body: JSON.stringify(data)
         }
 
-        fetch('/signin', config)
+        fetch(`${process.env.HOSTING}/signin`, config)
             .then(response => response.json())
             .then(user => {
                 if(user.id){
