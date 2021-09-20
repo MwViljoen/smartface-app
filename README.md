@@ -4,4 +4,4 @@ Application using REACT, EXPRESS, NODE and Postgres.
 
 ### App Live on Heroku
 
-[https://smart-face-application.herokuapp.com](Live App)
+[Live App](https://smart-face-application.herokuapp.com)
